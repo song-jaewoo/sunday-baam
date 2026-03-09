@@ -91,6 +91,21 @@ body::before {
   margin: 0;
 }
 
+.hero__meta {
+  position: relative;
+  z-index: 2;
+  margin-top: 16px;
+  display: grid;
+  gap: 4px;
+}
+
+.hero__meta p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: rgba(177, 196, 214, 0.72);
+}
+
 .hero__title-script {
   font-family: "Permanent Marker", cursive;
   font-size: clamp(2.8rem, 8vw, 5.8rem);
@@ -332,6 +347,15 @@ body::before {
   .hero__inner {
     width: 100%;
     padding: 20px 14px 18px;
+  }
+
+  .hero__meta {
+    margin-top: 12px;
+    gap: 2px;
+  }
+
+  .hero__meta p {
+    font-size: 0.8rem;
   }
 
   .section {
