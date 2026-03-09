@@ -136,7 +136,7 @@ const setlist = [
       {
         title: "Solanin",
         artist: "Asian Kung-Fu Generation",
-        year: "영화 '소라닌' OST",
+        year: "2010",
         lineup: "V.주영 / G1.동우 / G2.시우 / B.재우 / D.사빈",
       },
     ],
