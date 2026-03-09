@@ -131,7 +131,7 @@ const setlist = [
         title: "고민중독",
         artist: "QWER",
         year: "2012",
-        lineup: "V.주영 / G.시우 / B.재우 / D.사빈",
+        lineup: "V.주영 / G1.시우 / G2.동우 / B.재우 / D.사빈",
       },
       {
         title: "Solanin",
@@ -145,7 +145,6 @@ const setlist = [
 
 const membersRoot = document.querySelector("#members");
 const setlistRoot = document.querySelector("#setlist");
-const setlistToggle = document.querySelector("#setlist-toggle");
 
 membersRoot.innerHTML = members
   .map(
@@ -211,22 +210,3 @@ const revealObserver = new IntersectionObserver(
 revealElements.forEach((element) => {
   revealObserver.observe(element);
 });
-
-let isSetlistExpanded = false;
-
-const updateSetlistExpansion = () => {
-  const partCards = document.querySelectorAll(".part-card");
-
-  partCards.forEach((card) => {
-    card.classList.toggle("is-expanded", isSetlistExpanded);
-  });
-
-  setlistToggle.setAttribute("aria-expanded", String(isSetlistExpanded));
-};
-
-setlistToggle.addEventListener("click", () => {
-  isSetlistExpanded = !isSetlistExpanded;
-  updateSetlistExpansion();
-});
-
-updateSetlistExpansion();
