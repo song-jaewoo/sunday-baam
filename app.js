@@ -80,10 +80,10 @@ const setlist = [
         lineup: "V.상우 / K.시우",
       },
       {
-        title: "Art-of-you (가제)",
-        artist: "자작곡",
-        year: "Unreleased",
-        lineup: "V.상우 / G1.시우",
+        title: "시차",
+        artist: "Sunday Baam",
+        year: "2026",
+        lineup: "V.상우 / K.시우",
       },
       {
         title: "No Pain",
